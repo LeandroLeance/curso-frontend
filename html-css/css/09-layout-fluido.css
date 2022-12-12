@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #767676;
+    overflow: hidden;
+    background: url(./imagens/fundo-roxo.jpg.jpg) no-repeat;
+    background-size: cover;
+}
+
+h1, h2, p {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+div {
+    padding: 0px;
+    margin: 0;
+}
+
+.width-100 {
+    width: 100%;
+    width: 100vw;
+    background-color: aqua;
+    padding: 10px;
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+nav {
+    width: 20%;
+    float: left;
+    height: 100%;
+    display: table;
+    background-color: bisque;
+    background: url(./imagens/pato-maior.jpg.jpg) no-repeat;
+    background-size: contain;
+}
+
+article {
+    background-color: azure;
+    width: 80%;
+    float: left;
+    height: 100%;
+    display: table;
+    text-align: center;
+    background: url(./imagens/fundo-preto-vermelho.jpg.jpg) no-repeat;
+    background-size: cover;
+    color: aliceblue;
+
+}
+
+.fixa {
+    background-color: blue;
+    width: 200px;
+    margin: 0 auto;
+}
+

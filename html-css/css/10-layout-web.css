@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#youtube{
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 1px;
+}
+
+#youtube:hover{
+    color: rgb(143, 1, 1);
+    letter-spacing: 3px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(160, 4, 4);
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    color: rgb(0, 0, 0);
+    letter-spacing: 3px;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+nav {
+    background-color: #76767660;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    color: rgb(12, 12, 12);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+article {
+    background-color: rgb(39, 7, 182);
+    float: right;
+    padding: 10px;
+    width: 70%;
+}
+
+section::after {
+    background: rgb(143, 8, 8);
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.coluna{
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 2px;
+    /*background-color: black;*/
+    color: #ffffff;
+    /*border: 1px solid rgb(255, 255, 255);*/
+}
+
+.coluna-iframe{
+    width: 100%;
+}
+
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* responsive layout */
+        /*tablet*/
+
+@media (min-width: 769px){
+    body, article, footer, nav, section {
+        background: linear-gradient(100deg, #011526,#012E40,#025959);
+        color: #ffffff;
+    }      
+
+    p, a, li, h1, h2, h3{
+        color: #ffffff;
+    }
+} 
+        
+@media (max-width: 768px) {
+    nav {
+        width: 30vh;
+    }
+    
+    article {
+        width: 70vw;
+    }
+    
+    .coluna, .coluna-iframe{
+        width: 50vw;
+        min-width: unset;
+    }
+}
+
+        /*mobile first*/
+
+@media (max-width: 420px) {
+
+    nav, article, .coluna, .coluna-iframe{
+        width: 100%;
+        padding: 5px;
+        min-width: 320px;
+    }
+}

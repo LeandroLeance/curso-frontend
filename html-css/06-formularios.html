@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--padrão  HTML 5 -->
+<html lang="pt-br">
+
+<head>
+    <title>Fale Conosco</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divece-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/06-formularios.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Fale Conosco</h2>
+    </header>
+
+    <section>
+
+        <nav>
+            <ul>
+                <li><a href="#05-layouts.html">Home</a></li>
+                <li><a href="sobre">Sobre</a></li>
+                <li><a href="./-formularios.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Contato</h1>
+            <p>Preencha os campos abaixo</p>
+
+            <form method="post">
+
+                <div class="field">
+                    <label for="nome">Nome</label><br>
+                    <input class="nome" Type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div>
+
+                    <label for="email">E-mail</label><br>
+                    <input class="nome" type="email" name="email" id="email" placeholder="Digite seu email">
+                </div>
+                <div>
+
+                    <label for="mensagem">Mensagem</label><br>
+                    <textarea class="nome" name="mensagem" id="mensagem" rows="5"
+                        placeholder="Digite uma mensagem"></textarea>
+                </div>
+
+                
+                <div>
+
+                    <label>Qual linguagem você prefere?</label>
+                    <input type="radio" name="linguagens" value HTML> HTML
+                    <input type="radio" name="linguagens" value CSS> CSS
+                    <input type="radio" name="linguagens" value JavaScript> JavaScript
+                </div>
+
+
+                <div>
+                    <label>Quais linguagens você sabe?</label>
+                    <input type="checkbox" name="linguagens" value HTML> HTML
+                    <input type="checkbox" name="linguagens" value CSS> CSS
+                    <input type="checkbox" name="linguagens" value JavaScript> JavaScript
+                </div><br>
+
+                <div>
+                    <label>Qual sua cor favorita?</label>
+                    <select>
+                        <option value="Azul">Azul</option>
+                        <option value="Verde" selected>Verde</option>
+                        <option Value="Vermelho">Vermelho</option>
+                    </select>
+                </div><br>
+
+                <div>
+                    <input class="botao" type="submit" value="Enviar Dados">
+                </div>
+
+            </form>
+
+        </article>
+    </section>
+    <footer>
+        <p>Desenvolvido por Leandro</p>
+    </footer>
+</body>
+
+</html>
